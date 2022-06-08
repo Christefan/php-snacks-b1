@@ -10,13 +10,14 @@
     <?php 
     $games = [
         [
+            "impiantiSportivi"=> "PalaAgorà",
             "squadraCasa" => "Milano",
             "puntiCasa" => rand(1,100),
             "squadraOspite" => "Varese",
             "puntiOspite" => rand(1,100),
         ],
         [
-            ""  
+            "impiantiSportivi"=> "PalaPentassuglia",
             "squadraCasa" => "Brindisi",
             "puntiCasa" => rand(1,100),
             "squadraOspite" => "Trento",
@@ -24,7 +25,7 @@
             
         ],
         [
-            
+            "impiantiSportivi"=> "PalaCampanara",
             "squadraCasa" => "Pesaro",
             "puntiCasa" => rand(1,100),
             "squadraOspite" => "Trieste",
@@ -37,6 +38,9 @@
         <ul>
         <?php for($i = 0; $i < count($games); $i++){ ?>
         <li> 
+            <span>
+            <?php echo $games[$i]["impiantiSportivi"]; ?>
+            </span>
             <span>
             <?php echo $games[$i]["squadraCasa"]; ?>
             </span>
